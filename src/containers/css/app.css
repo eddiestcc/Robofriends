@@ -1,0 +1,18 @@
+@import "tachyons";
+
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+    }
+
+body {
+    background: rgb(75,172,19);
+    background: linear-gradient(90deg, rgba(75,172,19,1) 25%, rgba(0,212,147,1) 72%);
+}
+
+.title {
+    font-family: 'SEGA LOGO FONT';
+    color:  rgb(8, 115, 8)
+}
