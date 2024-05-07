@@ -25,15 +25,23 @@ const App = () => {
         setRobotList(filteredRobots);
     }
     return !robotList.length ?  
-        <h1 className="title f1 lh-title tc">Loading...</h1> :
         (
             <div className="tc">
-                <h1 className="title f1 lh-title">RoboFriends</h1>
+                <h1 className="title f1 lh-title">Waiting on friends...</h1>
                 <SearchBox searchFuct={searchFuct}/>
                 <Scroll>
                     <Cardlist robots={robotList} />
                 </Scroll>
             </div>
+        ) :
+        (
+        <div className="tc">
+            <h1 className="title f1 lh-title">RoboFriends</h1>
+            <SearchBox searchFuct={searchFuct}/>
+            <Scroll>
+                <Cardlist robots={robotList} />
+            </Scroll>
+        </div>
          );
 }
 

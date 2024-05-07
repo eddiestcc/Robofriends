@@ -10,6 +10,8 @@
 body {
     background: rgb(75,172,19);
     background: linear-gradient(90deg, rgba(75,172,19,1) 25%, rgba(0,212,147,1) 72%);
+    display: flex;
+    justify-content: center;
 }
 
 .title {
